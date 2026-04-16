@@ -1,0 +1,63 @@
+name: agriconnect
+description: AI-Driven Agricultural Marketplace and Smart Advisory System
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^4.6.0
+  firebase_auth: ^6.3.0
+  cloud_firestore: ^6.2.0
+  firebase_storage: ^13.2.0
+  firebase_messaging: ^16.1.3
+  flutter_local_notifications: ^21.0.0
+
+  # State management
+  provider: ^6.1.1
+
+  # Navigation
+  go_router: ^17.1.0
+
+  # UI
+  cupertino_icons: ^1.0.6
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+  fl_chart: ^1.2.0
+  lottie: ^3.0.0
+
+  # HTTP
+  http: ^1.2.0
+  dio: ^5.4.0
+
+  # Utils
+  intl: ^0.20.2
+  shared_preferences: ^2.2.2
+  image_picker: ^1.0.7
+  permission_handler: ^12.0.1
+  uuid: ^4.3.3
+  geolocator: ^14.0.2
+  geocoding: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/lottie/
